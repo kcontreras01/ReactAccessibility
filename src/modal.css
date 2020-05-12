@@ -1,4 +1,4 @@
-/* .modal-overlay-div {
+.modal-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, .65);
 }
 
-.modal-content-div {
+.modal-content {
     position: fixed;
     top: 0;
     right: 0;
@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 
-.modal-content-div:after {
+.modal-content:after {
     vertical-align: middle;
     display: inline-block;
     height: 100%;
@@ -31,7 +31,7 @@
     content: '';
 }
 
-.modal-dialog-div {
+.modal-dialog {
     position: relative;
     outline: 0;
     width: auto;
@@ -41,4 +41,4 @@
     max-width: auto;
     cursor: default;
     border-radius: 4px;
-} */
+}

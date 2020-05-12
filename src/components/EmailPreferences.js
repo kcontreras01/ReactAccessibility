@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import UnsubscribeConfirmation from "./UnsubscribeConfirmation";
 
 export default class EmailPreferences extends React.Component {
@@ -16,9 +16,10 @@ export default class EmailPreferences extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="unsubscribe-settings">
         <button onClick={this.onClickHandler}>Unsubscribe</button>
         {this.state.isOpen && <UnsubscribeConfirmation />}
+
         <label>
           Marketing Emails:
           <label> Yes
