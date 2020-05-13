@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import '../modal.css';
 
 export default class UnsubscribeConfirmation extends React.Component {
   constructor() {

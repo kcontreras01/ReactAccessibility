@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import UnsubscribeConfirmation from "./UnsubscribeConfirmation";
+import EmailPreferencesCheckbox from "./EmailPreferencesCheckbox";
 
 export default class EmailPreferences extends React.Component {
   constructor(props) {
@@ -17,30 +18,13 @@ export default class EmailPreferences extends React.Component {
   render() {
     return (
       <div className="unsubscribe-settings">
+        <div id="unsubscribe-content">
         <button onClick={this.onClickHandler}>Unsubscribe</button>
         {this.state.isOpen && <UnsubscribeConfirmation />}
 
-        <label>
-          Marketing Emails:
-          <label> Yes
-            <input type="checkbox"/>
-          </label>
-          
-          <label> No
-          <input type="checkbox"/>
-        </label>
-
-        </label>
-        <label>
-          Promo Emails:
-          <label> Yes
-            <input type="checkbox"/>
-          </label>
-          
-          <label> No
-          <input type="checkbox"/>
-        </label>
-        </label>
+        <EmailPreferencesCheckbox labelName="Marketing Emails"/>
+        <EmailPreferencesCheckbox labelName="Promo Emails"/>
+      </div>
       </div>
     );
   }
